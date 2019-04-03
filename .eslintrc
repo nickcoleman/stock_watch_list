@@ -1,0 +1,11 @@
+{
+  "extends": ["ncoleman", "prettier"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "semi": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/img-has-alt": 0
+  }
+}

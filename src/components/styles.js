@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import { green } from 'ansi-colors'
+import { green, white } from 'ansi-colors'
 
 export const DEFAULT_SPACING_SIZE = '1rem'
 const GRID_NOT_SUPPORTED =
@@ -11,6 +11,7 @@ const HOVER_RED = '#990000'
 const LIGHT_GREEN = '#6EEB83'
 const MARIGOLD = '#e8aa14'
 const ORANGE = '#FF5714'
+const BLUE = '#1be7ff'
 
 export const stylesheet = {
   header: css({
@@ -20,7 +21,7 @@ export const stylesheet = {
     justifyContent: 'center',
   }),
 
-  searchBar: css({
+  menuBar: css({
     backgroundColor: MARIGOLD,
     paddingBottom: DEFAULT_SPACING_SIZE,
     display: 'flex',
@@ -38,10 +39,21 @@ export const stylesheet = {
 
   searchInput: css({
     width: '200px',
+    border: `1px solid ${LIGHT_GREEN}`,
   }),
 
   searchSelection: css({
     width: '180px',
+    backgroundColor: LIGHT_GREEN,
+  }),
+
+  refreshButton: css({
+    backgroundColor: LIGHT_GREEN,
+    borderRadius: '5px',
+    border: `1px solid ${BLACK}`,
+    ':hover': {
+      backgroundColor: BLUE,
+    },
   }),
 
   portfolioGridRow: css({

@@ -12,8 +12,10 @@ class RefreshPortfolio extends React.Component {
 
   render() {
     return (
-      <div {...stylesheet.searchBar}>
-        <button onClick={() => this.props.handleRefreshPorfolio()}>Refresh Portfolio</button>
+      <div {...stylesheet.menuBar}>
+        <button {...stylesheet.refreshButton} onClick={() => this.props.handleRefreshPorfolio()}>
+          Refresh Portfolio
+        </button>
       </div>
     )
   }

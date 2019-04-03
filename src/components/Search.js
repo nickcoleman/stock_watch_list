@@ -54,7 +54,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div {...stylesheet.searchBar}>
+      <div {...stylesheet.menuBar}>
         <div {...stylesheet.search}>
           <input
             {...stylesheet.searchInput}

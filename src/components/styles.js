@@ -1,5 +1,4 @@
 import { css } from 'glamor'
-import { green, white } from 'ansi-colors'
 
 export const DEFAULT_SPACING_SIZE = '1rem'
 const GRID_NOT_SUPPORTED =

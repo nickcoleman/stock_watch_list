@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import { stylesheet } from './styles'
 
 class RefreshPortfolio extends React.Component {
-  static propTypes = {}
+  static propTypes = {
+    handleRefreshPorfolio: PropTypes.func.isRequired,
+  }
 
   refreshClicked = () => {
     this.props.handleRefreshPorfolio()

@@ -7,8 +7,8 @@ class StockCard extends React.Component {
   static propTypes = {
     handleDeleteStock: PropTypes.func.isRequired,
     stock: PropTypes.shape({
-      change: PropTypes.number.isRequired,
-      price: PropTypes.number.isRequired,
+      change: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
       symbol: PropTypes.string.isRequired,
       uuid: PropTypes.string,
     }),

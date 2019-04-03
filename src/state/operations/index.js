@@ -24,7 +24,7 @@ export const refreshPortfolio = symbols => async dispatch => {
       const stock = await api.getStock(symbol)
       stocks = { ...stocks, ...stock }
     }
-
+    console.log('xxx stocks', stocks)
     dispatch(actions.updatePortfolio(stocks))
   } catch (error) {
     dispatch(actions.portfolioError(error))
